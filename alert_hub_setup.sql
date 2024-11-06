@@ -34,8 +34,6 @@ grant usage, operate on warehouse alerts_wh to role alert_hub_role;
 /* setup provider side objects */
 use role alert_hub_role;
 use warehouse alerts_wh;
-use database alert_hub;
-use schema alert_hub.admin;
 call system$wait(10);
 
 create or replace database alert_hub comment='{"origin":"sf_sit","name":"alert_hub","version":{"major":1, "minor":0},"attributes":{"component":"alert_hub"}}';
@@ -43,6 +41,9 @@ create or replace schema alert_hub.example comment='{"origin":"sf_sit","name":"a
 create or replace schema alert_hub.admin comment='{"origin":"sf_sit","name":"alert_hub","version":{"major":1, "minor":0},"attributes":{"component":"alert_hub"}}';
 drop schema if exists alert_hub.public;
 create or replace table alert_hub.example.records_to_test (name varchar, row_timestamp timestamp default current_timestamp()) comment='{"origin":"sf_sit","name":"alert_hub","version":{"major":1, "minor":0},"attributes":{"component":"alert_hub"}}';
+
+use database alert_hub;
+use schema alert_hub.admin;
 
 /* Jinja parsing function */
 create or replace function alert_hub.admin.get_sql_jinja(template string, parameters variant)
