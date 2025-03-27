@@ -4,7 +4,7 @@ The Alert Hub is a rule-based meta-data driven framework for alerts and notifica
 
 All sample code is provided for reference purposes only. Please note that this code is provided “AS IS” and without warranty. Snowflake will not offer any support for use of the sample code.
 
-Copyright (c) 2024 Snowflake Inc. All Rights Reserved.
+Copyright (c) 2025 Snowflake Inc. All Rights Reserved.
 
 Please see TAGGING.md for details on object comments.
 
@@ -13,6 +13,9 @@ Please see TAGGING.md for details on object comments.
 - Navigate to Projects on the left-hand side and select Streamlit
 - Select ALERT_HUB
 - Follow in-app instructions
+
+> [!IMPORTANT]  
+> If using an email alert, the notification recipient must [verify their email address](https://docs.snowflake.com/en/user-guide/notifications/email-notifications#verify-the-email-addresses-of-the-email-notification-recipients).
 
 ## Usage
 The app operates using JINJA templates, allowing for reuse of condition and action patterns across many alerts.  To construct an alert:
