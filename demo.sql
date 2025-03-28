@@ -189,7 +189,7 @@ select * from alert_hub.example.records_to_test;
 
 -- wait for alert, observe alert history
 select
-    * 
+    *
 from table(information_schema.alert_history(
     SCHEDULED_TIME_RANGE_START
       =>dateadd('hour',-1,current_timestamp())))

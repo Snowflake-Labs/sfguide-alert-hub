@@ -14,7 +14,7 @@ Please see TAGGING.md for details on object comments.
 - Select ALERT_HUB
 - Follow in-app instructions
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > If using an email alert, the notification recipient must [verify their email address](https://docs.snowflake.com/en/user-guide/notifications/email-notifications#verify-the-email-addresses-of-the-email-notification-recipients).
 
 ## Usage

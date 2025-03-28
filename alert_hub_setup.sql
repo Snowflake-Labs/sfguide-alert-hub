@@ -583,7 +583,7 @@ def deploy_alert(session, alert_name):
         from alert_hub.admin.alert ac
         where ac.alert_name = '{alert_name}';
     """.format(alert_name=alert_name, condition_sql_escaped=condition_sql_escaped)
-    
+
     creation_sql = session.sql(alert_sql).collect()[0][0]
 
     deploy_sql = session.sql(creation_sql).collect()[0][0]
