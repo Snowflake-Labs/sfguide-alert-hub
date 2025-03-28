@@ -1,11 +1,16 @@
-from snowflake.snowpark.context import get_active_session
-import streamlit as st
 from abc import ABC, abstractmethod
-import io
-import os
-import re
-from snowflake.snowpark.functions import col, when_matched, when_not_matched, current_timestamp, call_function, \
-    parse_json, upper
+
+import streamlit as st
+from snowflake.snowpark.context import get_active_session
+from snowflake.snowpark.functions import (
+    call_function,
+    col,
+    current_timestamp,
+    parse_json,
+    upper,
+    when_matched,
+    when_not_matched,
+)
 
 
 # Check snowflake connection type
