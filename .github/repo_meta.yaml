@@ -7,11 +7,11 @@ production: false
 # distributed: whether any source code in this repository is distributed directly to customers (e.g. driver and frontend software)
 distributed: false
 
-# modified: whether any open source dependencies in this repository have been modified 
+# modified: whether any open source dependencies in this repository have been modified
 modified: false
 
 # release_branches: list of release branch patterns, exact matches or regex is acceptable
-release_branches: 
+release_branches:
   - main
   - release.*
 
@@ -25,4 +25,4 @@ jira_project_issue_type: Bug
 
 
 # jira_area: the jira area that raised issues should use
-jira_area: Orphaned 
+jira_area: Orphaned
