@@ -82,23 +82,23 @@ def set_default_sidebar():
         st.markdown("")
         if st.button(label="Conditions", help="Warning: Unsaved changes will be lost!"):
             set_page('Conditions')
-            st.experimental_rerun()
+            st.rerun()
         if st.button(label="Notification Integrations", help="Warning: Unsaved changes will be lost!"):
             set_page('Notification Integrations')
-            st.experimental_rerun()
+            st.rerun()
         if st.button(label="Actions", help="Warning: Unsaved changes will be lost!"):
             set_page('Actions')
-            st.experimental_rerun()
+            st.rerun()
         if st.button(label="Alerts", help="Warning: Unsaved changes will be lost!"):
             set_page('Alerts')
-            st.experimental_rerun()
+            st.rerun()
         st.markdown("")
         st.markdown("")
         st.markdown("")
         st.markdown("")
         if st.button(label="Return Home", help="Warning: Unsaved changes will be lost!"):
             set_page('Welcome')
-            st.experimental_rerun()
+            st.rerun()
 
 
 class WelcomePage(Page):
@@ -129,7 +129,7 @@ class WelcomePage(Page):
             current_row[1].write("")
             if current_row[1].button("Go 🚀", key=key):
                 set_page(key)
-                st.experimental_rerun()
+                st.rerun()
 
     def print_sidebar(self):
         set_default_sidebar()
